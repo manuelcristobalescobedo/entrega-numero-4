@@ -1,9 +1,10 @@
 import "./App.css";
+import SeccionGaleria from "./components/SeccionGaleria";
 
 function App() {
     return (
         <div className="App">
-            <header className="ejemplo">Encabezado</header>
+            <header className="ejemplo"></header>
                 <nav>
                     <a href ="buscar-todo">Buscar todo</a>
                     <a href ="hoteles">Hoteles</a>
@@ -16,11 +17,13 @@ function App() {
                     <h1>¿Adonde quieres ir?</h1>
                 </div>
 
-            <section className="SeccionBusqueda">Sección de búsqueda</section>
+                <div className="SeccionBusqueda">
+                    <section className="SeccionBusqueda"></section>
                     <input placeholder="Busca tu destino"/>
                     <button className ="botonDeBusqueda">Buscar</button>
+                </div>
 
-            <section className="ejemplo">Sección de catálogo</section>
+            <SeccionGaleria />
             <section className="ejemplo">Sección de información</section>
             <footer className="ejemplo">Pie de página</footer>
         </div>
