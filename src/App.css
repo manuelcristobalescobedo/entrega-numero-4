@@ -68,3 +68,117 @@ html, body, #root, .App {
             margin-left: 10px;
             height: 30px;
         }
+
+/* Contenedor de la galería */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1rem;
+  background-color: #fff;
+  color: #000;
+  padding: 4rem;
+}
+
+/* Tarjeta individual */
+.tarjeta-servicio {
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-4px);
+}
+
+/* Imagen de la tarjeta */
+.imagen-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* mantiene la imagen cuadrada */
+}
+
+.tarjeta-servicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Botón de favorito */
+.favorito-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.favorito-btn:hover {
+  background: #ffebee;
+}
+
+.favorito-btn svg path {
+  fill: black;
+  transition: fill 0.2s ease;
+}
+
+.favorito-btn:hover svg path {
+  fill: #e53935;
+}
+
+/* Etiqueta de "Nuevo" */
+.nuevo-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e53935;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Información de la tarjeta */
+.info-servicio {
+  padding: 0.75rem 0.25rem;
+}
+
+.nombre-servicio {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.precio-servicio,
+.calificacion-servicio {
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+  color: #666;
+  font-weight: 400;
+}
+
+/* Fila de calificación */
+.calificacion-servicio {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.estrellas {
+  display: flex;
+}
+
+.star-2 {
+  width: 14px;
+  height: 14px;
+  fill: #666;
+}

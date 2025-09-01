@@ -1,4 +1,5 @@
 import "./App.css";
+import SeccionGaleria from "./components/SeccionGaleria";
 
 function App() {
     return (
@@ -20,7 +21,7 @@ function App() {
                     <input placeholder="Busca tu destino"/>
                     <button className ="botonDeBusqueda">Buscar</button>
 
-            <section className="ejemplo">Sección de catálogo</section>
+            <SeccionGaleria />
             <section className="ejemplo">Sección de información</section>
             <footer className="ejemplo">Pie de página</footer>
         </div>
