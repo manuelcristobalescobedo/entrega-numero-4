@@ -1,6 +1,7 @@
 import "./App.css";
 import SeccionGaleria from "./components/SeccionGaleria";
-import SeccionBusqueda from "./components/SeccionBusqueda"
+import Pie from "./components/Pie";
+import SeccionBusqueda from "./components/SeccionBusqueda";
 import SeccionInformacion from "./components/SeccionInformacion";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
             <SeccionInformacion/>
         </div>
 
-            <footer className="ejemplo">Pie de página</footer>
+            <Pie />
         </>
     );
 }

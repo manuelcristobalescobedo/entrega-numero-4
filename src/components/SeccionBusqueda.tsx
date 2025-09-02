@@ -1,5 +1,5 @@
 import React from "react";
-import "/home/eeriepoisonous/entrega-numero-4/src/App.css";
+import "../App.css";
 
 
 const SeccionBusqueda: React.FC = () => {
