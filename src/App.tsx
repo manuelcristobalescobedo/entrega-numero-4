@@ -2,7 +2,6 @@ import "./App.css";
 import SeccionGaleria from "./components/SeccionGaleria";
 import SeccionBusqueda from "./components/SeccionBusqueda"
 import SeccionInformacion from "./components/SeccionInformacion";
-import TarjetaServicio from "./components/TarjetaServicio";
 
 function App() {
 
