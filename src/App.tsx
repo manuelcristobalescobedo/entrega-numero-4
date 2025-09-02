@@ -1,32 +1,23 @@
 import "./App.css";
 import SeccionGaleria from "./components/SeccionGaleria";
+import SeccionBusqueda from "./components/SeccionBusqueda"
+import SeccionInformacion from "./components/SeccionInformacion";
+import TarjetaServicio from "./components/TarjetaServicio";
 
 function App() {
+
     return (
+        <>
         <div className="App">
-            <header className="ejemplo"></header>
-                <nav>
-                    <a href ="buscar-todo">Buscar todo</a>
-                    <a href ="hoteles">Hoteles</a>
-                    <a href ="cosas-que-hacer">Cosas que hacer</a>
-                    <a href ="restaurantes">Restaurantes</a>
-                    <a href ="vuelos">Vuelos</a>
-                </nav>
-
-                <div id="dondeIr">
-                    <h1>¿Adonde quieres ir?</h1>
-                </div>
-
-                <div className="SeccionBusqueda">
-                    <section className="SeccionBusqueda"></section>
-                    <input placeholder="Busca tu destino"/>
-                    <button className ="botonDeBusqueda">Buscar</button>
-                </div>
-
-            <SeccionGaleria />
-            <section className="ejemplo">Sección de información</section>
-            <footer className="ejemplo">Pie de página</footer>
+            <SeccionBusqueda/>
         </div>
+        <div>
+            <SeccionGaleria />
+            <SeccionInformacion/>
+        </div>
+
+            <footer className="ejemplo">Pie de página</footer>
+        </>
     );
 }
 
