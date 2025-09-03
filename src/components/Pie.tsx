@@ -42,7 +42,7 @@ export default function Pie() {
             <li><a href="#">Promociones y beneficios</a></li>
             <li><a href="#">Atención al cliente</a></li>
             <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Políticas de cancelación</a></li>
+            <li><a href="#">Política de cancelación</a></li>
           </ul>
         </div>
 
