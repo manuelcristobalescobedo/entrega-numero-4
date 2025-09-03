@@ -62,7 +62,6 @@
     font-size: 1rem;
 }
 
-/* Contenedor de la galería */
 .grid-galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -72,7 +71,6 @@
   padding: 4rem;
 }
 
-/* Tarjeta individual */
 .tarjeta-servicio {
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -82,7 +80,6 @@
   transform: translateY(-4px);
 }
 
-/* Imagen de la tarjeta */
 .imagen-wrapper {
   position: relative;
   width: 100%;
@@ -97,7 +94,6 @@
   display: block;
 }
 
-/* Favourite button */
     .favorito-btn {
         position: absolute;
         top: 8px;
@@ -113,7 +109,7 @@
         justify-content: center;
         transition: background 0.2s ease;
 
-        box-sizing: border-box; /* importante */
+        box-sizing: border-box;
         padding: 0;
     }
 
@@ -130,8 +126,6 @@
         fill: #e53935;
     }
 
-
-/* Etiqueta de "Nuevo" */
 .nuevo-tag {
   position: absolute;
   top: 8px;
@@ -144,7 +138,6 @@
   border-radius: 4px;
 }
 
-/* Información de la tarjeta */
 .info-servicio {
   padding: 0.75rem 0.25rem;
 }
@@ -163,7 +156,6 @@
   font-weight: 400;
 }
 
-/* Fila de calificación */
 .calificacion-servicio {
   display: flex;
   align-items: center;
@@ -181,20 +173,19 @@
 }
 
 /* columnas información */
-.Container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 10px;
+.informacion {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem 4rem 4rem 4rem;
+    background-color: #fff;
+    gap: 1rem;
 }
 
-.Container > div {
-  background-color: lightgray;
-  color: black;
-  margin: 0.25rem;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px;
-  
+.informacion-tarjeta {
+    background-color: #e3e3e3;;
+    color: black;
+    border-radius: 4px;
+    padding: 3rem 2rem;
 }
 
 /* Nuevos estilos pie de pagina */
