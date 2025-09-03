@@ -6,20 +6,14 @@ import SeccionInformacion from "./components/SeccionInformacion";
 import Encabezado from "./components/Encabezado";
 
 function App() {
-
     return (
-        <>
         <div className="App">
             <Encabezado />
             <SeccionBusqueda/>
-        </div>
-        <div>
             <SeccionGaleria />
             <SeccionInformacion/>
-        </div>
-
             <Pie />
-        </>
+        </div>
     );
 }
 
