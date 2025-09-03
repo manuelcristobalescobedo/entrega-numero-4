@@ -1,49 +1,356 @@
-#dondeIr {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            margin-top: 3rem;
-            padding: 1rem;
-        }
+.busqueda {
+    margin-top: 77px;
+    background-color: #fff;
+    width: 100%;
+    height: 70vh;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    box-sizing: border-box;
+}
 
-        a {
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 10px;
-            gap:18px;
-            font-weight: 700;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-        }
+.busqueda-titulo {
+    margin: 0;
+    margin-bottom: 2.5rem;
+}
 
-        a:hover {
-            background: lightgray;
-        }
+.busqueda-navegacion {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+}
 
-        #searchBar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 15px;
-            margin: 2rem;
-            padding: auto;
-        }
+.busqueda-ancla {
+    color: black;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 0.75rem 1.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.busqueda-ancla:hover {
+    color: #666;
+    border: 1px solid #666;
+}
+
+.busqueda-formulario {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
         
-        input {
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 10px;
-            width: 500px;
-            height: auto;
-            font-size: 16px;
-        }
+.busqueda-buscar {
+    margin: 0;
+    background: #e3e3e3;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    padding: 0.75rem 1.25rem 0.75rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 500px;
+}
 
-        button {
-            border: 1px solid black;
-            border-radius: 10px;
-            margin-left: 10px;
-            height: 30px;
-        }
+.encabezado-buscar {
+    font-size: 1rem;
+}
 
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1rem;
+  background-color: #fff;
+  color: #000;
+  padding: 4rem;
+}
+
+.tarjeta-servicio {
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-4px);
+}
+
+.imagen-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.tarjeta-servicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+    .favorito-btn {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s ease;
+
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .favorito-btn:hover {
+        background: #ffebee;
+    }
+
+    .favorito-btn svg path {
+        fill: black;
+        transition: fill 0.2s ease;
+    }
+
+    .favorito-btn:hover svg path {
+        fill: #e53935;
+    }
+
+.nuevo-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e53935;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.info-servicio {
+  padding: 0.75rem 0.25rem;
+}
+
+.nombre-servicio {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.precio-servicio,
+.calificacion-servicio {
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.calificacion-servicio {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.estrellas {
+  display: flex;
+}
+
+.star-2 {
+  width: 14px;
+  height: 14px;
+  fill: #666;
+}
+
+/* columnas información */
+.informacion {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem 4rem 4rem 4rem;
+    background-color: #fff;
+    gap: 1rem;
+}
+
+.informacion-tarjeta {
+    background-color: #e3e3e3;;
+    color: black;
+    border-radius: 4px;
+    padding: 3rem 2rem;
+}
+
+/* Nuevos estilos pie de pagina */
+.pie-de-pagina {
+  background-color: #fff;
+  color: #000;
+  padding: 4rem 4rem 10rem 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.footer-col h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 0;
+  border: none;
+  font-weight: 600;
+}
+
+.footer-col ul li a:hover {
+  color: #666;
+  background: none;
+}
+
+.footer-redes a {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: #000;
+  border: none;
+  padding: 0;
+}
+
+.footer-redes a:hover {
+  color: #666;
+  background: none;
+
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.encabezado-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    flex: 1;
+}
+
+.encabezado-logo {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado-logo svg {
+    height: 30px;
+    width: auto;
+}
+
+.encabezado-logo:hover {
+    background: none;
+}
+
+.encabezado-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    flex: 1;
+    max-width: 600px;
+}
+
+.encabezado-buscar {
+    margin: 0;
+    background: #e3e3e3;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    padding: 0.75rem 1.25rem 0.75rem 1rem;
+    border-radius: 4px;
+
+    flex: 1;
+    min-width: 120px;
+}
+
+.encabezado-buscar:focus {
+    outline: none;
+}
+
+.encabezado-buscar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.encabezado-enviar {
+    padding: 0.75rem;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.encabezado-secundario {
+    flex: 1;
+    text-align: right;
+    gap: 2rem;
+
+    flex-shrink: 0;
+}
+
+.encabezado-registrarse {
+    padding: 0.75rem 1.25rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    margin-right: 1rem;
+}
+
+.encabezado-ingresar {
+    padding: 0;
+    background: none;
+    color: #000;
+    border: none;
+}

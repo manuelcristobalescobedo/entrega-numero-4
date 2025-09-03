@@ -1,37 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import SeccionGaleria from "./components/SeccionGaleria";
+import Pie from "./components/Pie";
+import SeccionBusqueda from "./components/SeccionBusqueda";
+import SeccionInformacion from "./components/SeccionInformacion";
+import Encabezado from "./components/Encabezado";
 
 function App() {
-  const [] = useState(0)
-
-  return (
-    <>
-      <div>
-        <div>
-            <nav>
-                <a href="buscar-todo">Buscar todo</a>
-                <a href="hoteles">Hoteles</a>
-                <a href="cosas-que-hacer">Cosas que hacer</a>
-                <a href="restaurantes">Restaurantes</a>
-                <a href="vuelos">Vuelos</a>
-            </nav>
+    return (
+        <div className="App">
+            <Encabezado />
+            <SeccionBusqueda/>
+            <SeccionGaleria />
+            <SeccionInformacion/>
+            <Pie />
         </div>
-
-        <div id="dondeIr">
-            <h1>¿Adonde quieres ir?</h1>
-        </div>
-
-        <div id="searchBar"> 
-            <input placeholder="Busca tu destino" />
-            <button className="botonDeBusqueda">Buscar</button>
-        </div>
-
-        <main>
-
-        </main>
-      </div>
-    </>
-  )
+    );
 }
 
-export default App
+export default App;
