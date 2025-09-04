@@ -1,5 +1,5 @@
 import "./App.css";
-import SeccionGaleria from "./components/SeccionGaleria";
+import SeccionServicios from "./components/SeccionServicios";
 import Pie from "./components/Pie";
 import SeccionBusqueda from "./components/SeccionBusqueda";
 import SeccionInformacion from "./components/SeccionInformacion";
@@ -10,7 +10,7 @@ function App() {
         <div className="App">
             <Encabezado />
             <SeccionBusqueda/>
-            <SeccionGaleria />
+            <SeccionServicios />
             <SeccionInformacion/>
             <Pie />
         </div>

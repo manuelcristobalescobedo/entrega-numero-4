@@ -62,117 +62,114 @@
     font-size: 1rem;
 }
 
-.grid-galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 1rem;
-  background-color: #fff;
-  color: #000;
-  padding: 4rem;
+/* SeccionServicios */
+.servicios-contenedor {
+    background-color: #fff;
+    color: #000;
+    padding: 4rem;
 }
 
-.tarjeta-servicio {
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.servicios-cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1rem;
 }
 
-.tarjeta-servicio:hover {
-  transform: translateY(-4px);
+.tarjeta-servicio-contenedor {
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.imagen-wrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.tarjeta-servicio-contenedor:hover {
+    transform: translateY(-4px);
 }
 
-.tarjeta-servicio img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-  display: block;
+.tarjeta-servicio-imagen {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
-    .favorito-btn {
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        background: rgba(255, 255, 255, 0.9);
-        border: none;
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: background 0.2s ease;
-
-        box-sizing: border-box;
-        padding: 0;
-    }
-
-    .favorito-btn:hover {
-        background: #ffebee;
-    }
-
-    .favorito-btn svg path {
-        fill: black;
-        transition: fill 0.2s ease;
-    }
-
-    .favorito-btn:hover svg path {
-        fill: #e53935;
-    }
-
-.nuevo-tag {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: #e53935;
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+.tarjeta-servicio-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
 }
 
-.info-servicio {
-  padding: 0.75rem 0.25rem;
+.tarjeta-servicio-favorito {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+    box-sizing: border-box;
+    padding: 0;
 }
 
-.nombre-servicio {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0 0 0.25rem;
+.tarjeta-servicio-favorito:hover {
+    background: #ffebee;
 }
 
-.precio-servicio,
-.calificacion-servicio {
-  font-size: 0.9rem;
-  margin: 0 0 0.25rem;
-  color: #666;
-  font-weight: 400;
+.tarjeta-servicio-favorito svg path {
+    fill: black;
+    transition: fill 0.2s ease;
 }
 
-.calificacion-servicio {
+.tarjeta-servicio-favorito:hover svg path {
+     fill: #e53935;
+}
+
+.tarjeta-servicio-etiqueta {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #e53935;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.tarjeta-servicio-informacion {
+      padding: 0.75rem 0.25rem;
+}
+
+.tarjeta-servicio-nombre {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+}
+
+.tarjeta-servicio-precio, .tarjeta-servicio-calificacion {
+    font-size: 0.9rem;
+    margin: 0 0 0.25rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.tarjeta-servicio-calificacion {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.tarjeta-servicio-estrellas {
   display: flex;
-  align-items: center;
-  gap: 0.4rem;
 }
 
-.estrellas {
-  display: flex;
-}
 
-.star-2 {
-  width: 14px;
-  height: 14px;
-  fill: #666;
-}
-
-/* columnas información */
+/* SeccionInformacion */
 .informacion {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -188,62 +185,61 @@
     padding: 3rem 2rem;
 }
 
-/* Nuevos estilos pie de pagina */
+/* Pie */
 .pie-de-pagina {
-  background-color: #fff;
-  color: #000;
-  padding: 4rem 4rem 10rem 4rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-color: #fff;
+    color: #000;
+    padding: 4rem 4rem 10rem 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+.pie-cuadricula {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
-.footer-col h4 {
-  margin-bottom: 0.5rem;
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #666;
+.pie-columna h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.pie-columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-col ul li {
-  margin-bottom: 0.5rem;
+.pie-columna ul li {
+    margin-bottom: 0.5rem;
 }
 
-.footer-col ul li a {
-  text-decoration: none;
-  color: #000;
-  padding: 0;
-  border: none;
-  font-weight: 600;
+.pie-columna ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0;
+    border: none;
+    font-weight: 600;
 }
 
-.footer-col ul li a:hover {
-  color: #666;
-  background: none;
+.pie-columna ul li a:hover {
+    color: #666;
+    background: none;
 }
 
-.footer-redes a {
-  margin-right: 1rem;
-  font-size: 1.2rem;
-  color: #000;
-  border: none;
-  padding: 0;
+.pie-redes a {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: #000;
+    border: none;
+    padding: 0;
 }
 
-.footer-redes a:hover {
-  color: #666;
-  background: none;
-
+.pie-redes a:hover {
+    color: #666;
+    background: none;
 }
 
 /* Encabezado */
@@ -266,7 +262,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
     flex: 1;
 }
 
@@ -306,9 +301,8 @@
     color: #000;
     padding: 0.75rem 1.25rem 0.75rem 1rem;
     border-radius: 4px;
-
     flex: 1;
-    min-width: 120px;
+    min-width: 400px;
 }
 
 .encabezado-buscar:focus {
@@ -335,7 +329,6 @@
     flex: 1;
     text-align: right;
     gap: 2rem;
-
     flex-shrink: 0;
 }
 

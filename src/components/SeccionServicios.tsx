@@ -54,10 +54,10 @@ const servicios: Servicio[] = [
   },
 ];
 
-const SeccionGaleria: React.FC = () => {
+const SeccionServicios: React.FC = () => {
   return (
-    <section className="seccion-galeria">
-      <div className="grid-galeria">
+    <section className="servicios-contenedor">
+      <div className="servicios-cuadricula">
         {servicios.map((servicio) => (
           <TarjetaServicio key={servicio.id} servicio={servicio} />
         ))}
@@ -66,4 +66,4 @@ const SeccionGaleria: React.FC = () => {
   );
 };
 
-export default SeccionGaleria;
+export default SeccionServicios;
